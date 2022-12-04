@@ -1,0 +1,4 @@
+SELECT e.e_id, e.e_nama, w.w_nama, d.d_nama
+FROM karyawan as e JOIN (pekerjaan as w, departemen as d)
+ON (w.w_id=e.w_id AND d.d_id=w.d_id)
+ORDER BY e.e_id;
